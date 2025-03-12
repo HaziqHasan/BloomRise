@@ -84,12 +84,7 @@ const Contact = () => {
   </p>
 </div>
               <div className="flex space-x-4">
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
-                >
-                  Send Message
-                </button>
+            
                 <button
                   type="button"
                   onClick={sendWhatsAppMessage}
