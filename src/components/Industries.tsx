@@ -1,37 +1,34 @@
-import React from 'react';
-import { Building2, Plane, ShoppingBag, Factory, Ban as Bank, Heart } from 'lucide-react';
+
+import React from 'react'; 
+import { Car, Briefcase, HeartPulse, Monitor, Factory } from 'lucide-react';
 import { AnimatedSection } from './AnimatedSection';
 
 const industries = [
   {
-    icon: <Building2 className="h-12 w-12" />,
-    title: 'Real Estate',
-    description: 'Strategic solutions for property development and management'
+
+    icon: <Car className="h-12 w-12" />, 
+    title: 'Automotive',
+    description: 'Connecting top talent with the evolving automotive industry'
   },
   {
-    icon: <Plane className="h-12 w-12" />,
-    title: 'Aviation',
-    description: 'Operational excellence in aviation and aerospace'
+    icon: <Briefcase className="h-12 w-12" />, 
+    title: 'Finance',
+    description: 'Expert recruitment solutions for the finance sector'
   },
   {
-    icon: <ShoppingBag className="h-12 w-12" />,
-    title: 'Retail',
-    description: 'Digital transformation and retail optimization'
-  },
-  {
-    icon: <Factory className="h-12 w-12" />,
-    title: 'Manufacturing',
-    description: 'Efficiency improvements and process optimization'
-  },
-  {
-    icon: <Bank className="h-12 w-12" />,
-    title: 'Banking',
-    description: 'Financial services and digital banking solutions'
-  },
-  {
-    icon: <Heart className="h-12 w-12" />,
+    icon: <HeartPulse className="h-12 w-12" />, 
     title: 'Healthcare',
-    description: 'Healthcare management and technology integration'
+    description: 'Providing skilled professionals for the healthcare industry'
+  },
+  {
+    icon: <Monitor className="h-12 w-12" />, 
+    title: 'Technology',
+    description: 'Helping tech companies find top-tier IT professionals'
+  },
+  {
+    icon: <Factory className="h-12 w-12" />, 
+    title: 'Manufacturing',
+    description: 'Recruitment services for the manufacturing sector'
   }
 ];
 
@@ -40,9 +37,10 @@ const Industries = () => {
     <section id="industries" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection animation="fadeInUp" className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">City We Serve</h2>
+
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Industries We Serve</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Expertise across diverse sectors to deliver industry-specific solutions
+            We specialize in recruiting for various industries, including:
           </p>
         </AnimatedSection>
 
@@ -68,5 +66,6 @@ const Industries = () => {
     </section>
   );
 };
+
 
 export default Industries;

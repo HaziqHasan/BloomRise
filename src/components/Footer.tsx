@@ -22,7 +22,9 @@ const Footer = () => {
           <AnimatedSection animation="fadeInUp" delay={100}>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {['Home', 'About Us', 'Services', 'Industries', 'Contact'].map((link, index) => (
+
+              {['Home', 'About Us', 'Service', 'Industries', 'Contact'].map((link, index) => (
+
                 <li key={index}>
                   <a
                     href={`#${link.toLowerCase().replace(' ', '-')}`}

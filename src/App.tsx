@@ -1,12 +1,15 @@
-import React from 'react';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Services from './components/Services';
 import About from './components/About';
+import Service from './components/Service';
 import Industries from './components/Industries';
-import Testimonials from './components/Testimonials';  // 👈 New Import
+import Testimonials from './components/Testimonials';  
 import Contact from './components/Contact';
+import TeamInfo from './components/TeamInfo';
 import Footer from './components/Footer';
+
+
 
 function App() {
   return (
@@ -14,9 +17,11 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Services />
+
+      <Service/>
+      <TeamInfo />
       <Industries />
-      <Testimonials />  {/* 👈 Testimonials section added here */}
+      <Testimonials />  
       <Contact />
       <Footer />
     </div>
