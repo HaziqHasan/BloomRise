@@ -97,30 +97,30 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import images1 from "../assests/anmol.jpg"
-import images2 from '../assests/zaidbhai.jpg'
-import images3 from '../assests/gorav.jpg'
+import images1 from '../assests/zaidbhai.jpg'
+import images2 from '../assests/gorav.jpg'
+import images3 from "../assests/anmol.jpg"
 // import images1 from '../assests/mens.avif';
 // import images2 from '../assests/men2.avif';
 
 
 // Sample Data
 // const hrCard = {
-//   image: images2,
+//   image: images1,
 //   title: 'HR SOLUTIONS',
 //   description: 'Comprehensive human resource management and recruitment services.',
 // };
 
 const teamMembers = [
-  { image: images2, title: 'Zaid Khan', description: 'HR' },
-  { image: images1, title: 'Anmol', description: 'Team Leader' },
-  { image: images3, title: 'Gourav ', description: 'Senior Team Lead' },
+  { image: images1, title: 'Zaid Khan', description: 'HR' },
+  { image: images2, title: 'Gourav ', description: 'Senior Team Lead' },
+  { image: images3, title: 'Anmol', description: 'Team Leader' },
   
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 bg-gray-50 relative">
+    <section id="services" className=" py-20 bg-gray-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Title */}
@@ -157,12 +157,12 @@ const Services = () => {
             }}
             className="my-10"
           >
-            <div className="flex gap-6 overflow-x-auto p-4 justify-center">
+            <div className="flex gap-10 overflow-x-auto p-4 ">
   {teamMembers.map((member, index) => (
     <div
       key={index}
       className="max-w-lg bg-white rounded-2xl shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 flex-shrink-0"
-      style={{ width: "300px" }} // Adjust width as needed
+            style={{ width: "300px" }} // Adjust width as needed
     >
       <img src={member.image} alt={member.title} className="w-full h-60 object-cover object-top" />
       <div className="p-6">

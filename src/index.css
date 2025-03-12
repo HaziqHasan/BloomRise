@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -133,4 +133,4 @@
 .animate-visible {
   opacity: 1;
   transform: translate(0) scale(1);
-}
+} */
