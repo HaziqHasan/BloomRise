@@ -1,6 +1,5 @@
 
 
-import React from 'react';
 import { Building2, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { AnimatedSection } from './AnimatedSection';
 
@@ -37,11 +36,11 @@ const Footer = () => {
             </ul>
           </AnimatedSection>
 
-         
+
           <AnimatedSection animation="fadeInUp" delay={300}>
             <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
-              {[ 
+              {[
                 { icon: <Facebook className="h-6 w-6" />, href: '#' },
                 { icon: <Twitter className="h-6 w-6" />, href: '#' },
                 { icon: <Linkedin className="h-6 w-6" />, href: '#' },
@@ -58,23 +57,24 @@ const Footer = () => {
             </div>
           </AnimatedSection>
 
-           {/* Removed Services Section and Added YouTube Logo and CTA */}
-           <AnimatedSection animation="fadeInUp" delay={200}>
-            <div className="flex flex-col items-center justify-center">
+          {/* Removed Services Section and Added YouTube Logo and CTA */}
+          <AnimatedSection animation="fadeInUp" delay={200}>
+            <div className="flex flex-col items-start justify-center ">
               {/* Updated YouTube Logo URL */}
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
+               
                 alt="YouTube Logo"
-                className="h-24  mb-4"
+                className="h-10  mb-2"
               />
-              
+
               <a
-                href="https://www.youtube.com/channel/YourChannelLink"  // Replace with your actual YouTube channel link
+                href="https://www.youtube.com/channel/YourChannelLink" // Replace with your actual YouTube channel link
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 text-2xl hover:text-white transition-colors duration-300"
+                className="text-lg font-semibold hover:text-red-500 transition-colors duration-300 flex items-center "
               >
-                Visit our YouTube Channel
+               Watch Exclusive Content on YouTube!🎥
               </a>
             </div>
           </AnimatedSection>

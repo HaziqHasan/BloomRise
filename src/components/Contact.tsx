@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { AnimatedSection } from "./AnimatedSection";
 
@@ -17,7 +17,7 @@ const Contact = () => {
   // Function to send WhatsApp message
   const sendWhatsAppMessage = () => {
     const { name, email, message } = formData;
-    const phoneNumber = "+916260527614"; // Replace with your WhatsApp number
+    const phoneNumber = "+919399156629"; // Replace with your WhatsApp number
 
     // Format message with user details
     const whatsappMessage = `Hello, I am ${name}.\n\nEmail: ${email}\n\nMessage: ${message}`;
@@ -51,7 +51,7 @@ const Contact = () => {
                   id="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-all duration-300"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-lg focus:border-blue-500 focus:ring-blue-500 transition-all duration-300"
                   required
                 />
               </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                   id="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-all duration-300"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-lg focus:border-blue-500 focus:ring-blue-500 transition-all duration-300"
                   required
                 />
               </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-all duration-300"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-lg focus:border-blue-500 focus:ring-blue-500 transition-all duration-300"
                   required
                 ></textarea>
               </div>
@@ -102,12 +102,12 @@ const Contact = () => {
               {
                 icon: <MapPin className="h-6 w-6 text-blue-600 mt-1" />,
                 title: "Our Location",
-                content: "123 Business Street, New Delhi, India",
+                content: "MP Nagar, Zone-1 , Bhopal, MP ",
               },
               {
                 icon: <Phone className="h-6 w-6 text-blue-600 mt-1" />,
                 title: "Phone",
-                content: "+91 11 1234 5678",
+                content: "+91 93 991 56629",
               },
               {
                 icon: <Mail className="h-6 w-6 text-blue-600 mt-1" />,

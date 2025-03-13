@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="text-white w-full">
               <AnimatedSection animation="fadeInUp" className="mb-4">
                 <h1 className="text-4xl md:text-6xl font-bold relative">
-                  Your Success Is Our Business
+                Bloom with Bloomerise
                   <span className="absolute -z-10 inset-0 animate-shimmer"></span>
                 </h1>
               </AnimatedSection>
@@ -23,11 +23,11 @@ const Hero = () => {
                 </p>
               </AnimatedSection>
 
-              <AnimatedSection animation="fadeInUp" delay={400}>
+              {/* <AnimatedSection animation="fadeInUp" delay={400}>
                 <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg animate-pulse-slow">
                   Get Started
                 </button>
-              </AnimatedSection>
+              </AnimatedSection> */}
             </div>
           </div>
         </div>

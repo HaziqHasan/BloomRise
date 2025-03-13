@@ -144,26 +144,28 @@ const Services = () => {
             modules={[Navigation, Autoplay]}
             spaceBetween={20}
             slidesPerView={1}
-            centeredSlides={true}
+            centeredSlides={false}
             breakpoints={{
               640: { slidesPerView: 2 },
               768: { slidesPerView: 3 },
               1024: { slidesPerView: 3 },
             }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            // autoplay={{ delay: 3000, disableOnInteraction: true }}
             navigation={{
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }}
             className="my-10"
           >
-            <div className="flex gap-10 overflow-x-auto p-4 ">
+            <div className="flex gap-10 overflow-x-auto justify-center p-4 ">
   {teamMembers.map((member, index) => (
+     <SwiperSlide key={index}>
+
     <div
       key={index}
       className="max-w-lg bg-white rounded-2xl shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 flex-shrink-0"
-            style={{ width: "300px" }} // Adjust width as needed
-    >
+      style={{ width: "300px" }} // Adjust width as needed
+      >
       <img src={member.image} alt={member.title} className="w-full h-60 object-cover object-top" />
       <div className="p-6">
         <h3 className="text-lg font-bold text-red-600">{member.title}</h3>
@@ -173,6 +175,7 @@ const Services = () => {
         </button>
       </div>
     </div>
+      </SwiperSlide>
   ))}
 </div>
 

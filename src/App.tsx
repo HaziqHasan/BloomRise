@@ -15,8 +15,8 @@ function App() {
   return (
       <div className="bg-gray-100">
       <Navbar />
-      <div className="container mx-auto px-10 sm:px-6 lg:px-8">
         <Hero />
+      <div className="container mx-auto px-10 sm:px-6 lg:px-8">
         <About />
         <Service />
         <TeamInfo />
